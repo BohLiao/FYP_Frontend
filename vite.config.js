@@ -5,10 +5,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: Number(process.env.PORT) || 5173, // for local dev
+    port: Number(process.env.PORT) || 5173,
   },
   preview: {
     host: true,
-    port: Number(process.env.PORT) || 4000, // required by Render
+    port: Number(process.env.PORT) || 4000,
+    allowedHosts: [".onrender.com"], // ✅ allow any Render subdomain
   },
 });
