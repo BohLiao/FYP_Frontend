@@ -123,7 +123,7 @@ export default function LandingPage() {
         <section id="poster" className="scroll-animate animate-zoom">
           <h2>📌 Project Poster</h2>
           <div className="neon-box">
-            <img src="/backend/public/assets/poster.jpg" alt="Quantum Poster" className="neon-glow" />
+            <img src="https://fyp15-backend.onrender.com/public/assets/poster.jpg" alt="Quantum Poster" className="neon-glow" />
           </div>
         </section>
 
@@ -181,7 +181,7 @@ export default function LandingPage() {
           <div className="team-cards">
             {Object.entries(teamRoles).map(([name, role]) => (
               <div className="card" key={name}>
-                <img src="/backend/public/assets/OIP.jpeg" alt={name} />
+                <img src="https://fyp15-backend.onrender.com/public/assets/OIP.jpeg" alt={name} />
                 <h3>{name}</h3>
                 <p>{role}</p>
               </div>
